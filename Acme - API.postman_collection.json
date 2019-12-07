@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "b50513ed-023f-43a1-ae2c-4023658f7a34",
+		"name": "Acme - API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Contatos",
+			"item": [
+				{
+					"name": "Listar Contatos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/contatos",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Contato",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/contatos/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Contato",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 1,\n    \"nomeContato\": \"Higo.\",\n    \"email\": \"higoalexandreb@gmail.com\",\n    \"fone\": \"83999337165\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlBase}}/contatos/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Contato",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeContato\": \"Higo\",\n    \"email\": \"higoalexandreb@gmail.com\",\n    \"fone\": \"8344444444\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlBase}}/contatos/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contato",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/contatos/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Contatos do cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/contatos/clientes/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"contatos",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d35655fd-cc7e-43e8-965b-0a4f5fd522c6",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "8100ffff-7587-4e2b-8d6f-97cccac2e5e2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Listar Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/clientes",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/clientes/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"nomeCliente\": \"Higo Barbosa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlBase}}/clientes/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Cliente",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nomeCliente\": \"Higo Alexandre\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlBase}}/clientes",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{urlBase}}/clientes/1",
+							"host": [
+								"{{urlBase}}"
+							],
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "20515d5a-8bae-4cda-b96a-785b58278c0e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5b6db39c-4da4-4a9a-98d3-342b05be92b5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "9c9c9151-9c4b-4b89-8776-b803598343ce",
+			"key": "urlBase",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
