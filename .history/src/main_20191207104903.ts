@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const options = new DocumentBuilder()
-    .setTitle('ACME')
+    .setTitle('Softcom LAB')
     .setDescription('API test Nest')
     .setVersion('1.0')
     .addTag('lab')
